@@ -1,0 +1,251 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #282c37;
+}
+.container {
+	margin: 0 auto 20px;
+	width: 1000px;
+	height: 100%;
+	border-radius: 15px;
+	background-color: #d9e1e8;
+	padding-bottom: 10px;
+}
+.h1 {
+	min-height: 70px;
+	line-height: 35px;
+	box-shadow: 0 10px 15px -5px black;
+	margin-bottom: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background-color: #2b90d9;
+	border: 2px solid #d9e1e8;
+	border-top-width: 0;
+	box-sizing: border-box;
+	line-height: 70px;
+	color: #d9e1e8;
+	font-size: 32px;
+	text-transform: uppercase;
+	cursor: default;
+}
+.h1::selection {
+	background: transparent;
+}
+.h1 img {
+	position: relative;
+	top: 7px;
+	margin-right: 15px;
+	height: 40px;
+	margin-left: 60px;
+}
+.container .row {
+	position: relative;
+	left: 25px;
+	width: 965px;
+	height: 50px;
+	line-height: 50px;
+	border: 1px solid #d9e1e8;
+	box-sizing: border-box;
+	border-radius: 5px;
+	margin: 2px 5px;
+	font-size: 16px;
+}
+.container .row:not(:nth-child(2)):hover {
+	transition: .2s;
+	cursor: pointer;
+	background-color: #9baec8 !important;
+}
+.container .row div {
+	display: inline-block;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+/*.container .row div:hover {
+	white-space: normal;
+	overflow: visible;
+}*/
+.button1 {
+	border: none;
+	width: 120px;
+	height: 40px;
+	background-color: #d9e1e8;
+	cursor: pointer;
+	outline: none;
+	float: right;
+	margin-top: 15px;
+	margin-right: 10px;
+	border-radius: 5px;
+}
+.button1 a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	width: 100%;
+	height: 100%;
+	line-height: 40px;
+	font-size: 14px;
+}
+.button1:active {
+	transition: .1s;
+	background-color: #9baec8;
+	border: 1px solid #9baec8;
+	box-sizing: border-box;
+}
+.button2 {
+	border: none;
+	width: 120px;
+	height: 40px;
+	background-color: #2b90d9;
+	cursor: pointer;
+	outline: none;
+	margin-top: 15px;
+	margin-right: 10px;
+	color: #d9e1e8;
+	font-size: 16px;
+	border-radius: 5px;
+}
+.button2:active {
+	transition: .1s;
+	background-color: #1b80c9;
+}
+.row .id {
+	position: relative;
+	line-height: 46px;
+	left: -25px;
+	top: -1px;
+	width: 50px;
+	height: 50px;
+	box-sizing: border-box;
+	border: 2px solid #d9e1e8;
+	border-radius: 50%;
+	background-color: #2b90d9;
+	color: white;
+	font-size: 16px;
+}
+.row .date {
+	width: 145px;
+}
+.row .name {
+	width: 200px;
+}
+.row .phone, .row .email {
+	width: 150px;
+}
+.row .address {
+	width: 250px;
+}
+.row .status {
+	width: 100px;
+}
+.row .manager {
+	width: 100px;
+}
+
+.requestForm {
+	margin: 50px auto 30px;
+	padding: 20px 0;
+	width: 500px;
+	height: 100%;
+	border-radius: 15px;
+	background-color: #d9e1e8;	
+	border: 1px solid #282c37;
+}
+.requestForm label {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px auto;
+	height: 30px;
+	width: 450px;
+}
+.requestForm label::selection {
+	background: transparent;
+}
+.requestForm label input {
+	height: 100%;
+	width: 300px;
+	padding: 0 20px;
+	border: none;
+	border-radius: 2px;
+}
+.requestForm .right {
+	margin-left: 355px;
+}
+.requestAccepted {
+	margin: 50px 40px 30px;
+	text-align: center;
+	font-size: 18px;
+	color: #282c37;
+}
+.requestAccepted img {
+	margin-right: 15px;
+	position: relative;
+	top: 7px;
+	height: 40px;
+}
+.selectStatus {
+	width: 340px;
+	height: 100%;
+	padding: 0 20px;
+	border: none;
+	border-radius: 2px;
+	outline: none;
+}
+.displayNone {
+	display: none;
+}
+.popupWindow {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #282c37cc;
+}
+.addManagerForm {
+	position: absolute;
+	top: 125px;
+	left: calc(50% - 250px);
+	padding: 20px 0;
+	width: 500px;
+	/*height: 275px;*/
+	border-radius: 15px;
+	background-color: #d9e1e8;	
+	border: 1px solid #282c37;
+}
+.addManagerForm label {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px auto;
+	height: 30px;
+	width: 450px;
+}
+.addManagerForm label::selection {
+	background: transparent;
+}
+.addManagerForm label input {
+	height: 100%;
+	width: 300px;
+	padding: 0 20px;
+	border: none;
+	border-radius: 2px;
+}
+.addManagerForm label input[type="checkbox"] {
+	height: 100%;
+	width: 30px;
+	border: none;
+	border-radius: 2px;
+	margin: 0 20px;
+	box-sizing: border-box;
+}
+.addManagerForm label input[type="checkbox"]:hover {
+	border: 2px solid #282c37;
+}
+.addManagerForm .right {
+	margin-left: 355px;
+}
+.checkbox {
+	justify-content: flex-start !important;
+}
